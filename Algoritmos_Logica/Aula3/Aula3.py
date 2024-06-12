@@ -49,6 +49,7 @@ else:
     print('Número ímpar.')
 '''
 
+'''
 # not
 x = True
 y = False
@@ -64,3 +65,27 @@ print(x and x)
 print(x or y)
 print(x or x)
 print(y or y)
+'''
+
+# Expressões lógicas/booleanas
+
+x = 10
+y = 1
+
+res = not x > y
+print(res)
+
+x = 10
+y = 1
+z = 5.5
+
+res = (x > y) and (z == y)
+print(res)
+
+x = 10
+y = 1
+z = 5.5
+
+
+res = x > y or not z == y and y != y + z / x
+print(res)

@@ -13,7 +13,7 @@ print('O valor do seu desconto é de R${}'.format(valor_desconto))
 print('O preço final do seu produto é de R${}'.format(preco_final))
 '''
 
-
+'''
 #Exercício 2
 # Escreva um programa que pergunte a quantidade de km percorridos por uma carro alugado pelo usuário,
 # assim como a quantidade de dias pelos quais o carro foi alugado. Calcule o preço a pagar, sabendo
@@ -29,3 +29,15 @@ diarias_totais = diarias * valor_diaria
 
 total_pagar = valor_total_km + diarias_totais
 print('O valor total da diária é de R${}.\nO valor total pelos km percorridos é de {}.\nO valor total da locação é de R${}.'.format(diarias_totais, valor_total_km, total_pagar))
+'''
+
+
+# Exercício 3
+# Crie uma variável de string que recebe uma frase qualquer. Crie uma segunda variável, agora
+# contendo a metade da string digitada. Imprima na tela somente os doi últimos caracteres da
+# segunda variável do tipo string.
+
+frase_qualquer = input('Digite a sua melhor frase: ')
+metade_frase = frase_qualquer[:int(len(frase_qualquer) / 2)]
+
+print(metade_frase[-2:])

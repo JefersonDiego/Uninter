@@ -3,8 +3,8 @@
 # e um percentual de desconto a ser aplicado a ele. Calcule e exiba o
 # valor do desconto e o preço final do produto.
 
-preco_produto = float(input('Digite o valor do seu produto: R$'))
-percentual_desconto = float(input('Digite o percentual de desconto:    %\b\b\b\b'))
+preco_produto = float(input('Digite o preço do seu produto: R$'))
+percentual_desconto = float(input('Digite o percentual de desconto (0 - 100%):    %\b\b\b\b'))
 
 valor_desconto = (preco_produto * percentual_desconto) / 100
 preco_final = preco_produto - valor_desconto

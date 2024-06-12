@@ -132,14 +132,16 @@ quantidade = int(input('Quantas unidades deseja comprar? '))
 if (opcao == 1):
     preco_total = quantidade * maca
     produto_existe = 1
-elif (opcao == 2):
-    preco_total = quantidade * laranja
-    produto_existe = 1
-elif (opcao == 3):
-    preco_total = quantidade * banana
-    produto_existe = 1
 else:
-    produto_existe = 0
+    if (opcao == 2):
+        preco_total = quantidade * laranja
+        produto_existe = 1
+    else:
+        if (opcao == 3):
+            preco_total = quantidade * banana
+            produto_existe = 1
+        else:
+            produto_existe = 0
 
 if (produto_existe == 1):
     print('Valor total a pagar R${0:.3g}.'.format(preco_total))

@@ -1,4 +1,4 @@
-# Exercício
+# Exercícios
 
 #Condicional simples
 
@@ -69,6 +69,7 @@ print(y or y)
 
 # Expressões lógicas/booleanas
 
+'''
 x = 10
 y = 1
 
@@ -82,10 +83,30 @@ z = 5.5
 res = (x > y) and (z == y)
 print(res)
 
+
 x = 10
 y = 1
 z = 5.5
 
-
 res = x > y or not z == y and y != y + z / x
 print(res)
+'''
+
+# Exercícios parte 2
+
+# Um aluno, para passar de ano, precisa ser aprovado em todas as matérias
+# que está cursando.
+# Assuma que a média para aprovação é a partir de 7 e que o aluno cursa 3
+# matérias, somente. Escreva um algoritmo que leia a nota final do aluno em
+# cada matéria e informe, na tela, se ele passou de ano ou não.
+
+nota1 = float(input("Digita a nota da primeira matéria: "))
+nota2 = float(input("Digita a nota da segunda matéria: "))
+nota3 = float(input("Digita a nota da terceira matéria: "))
+
+# if ( (nota1 + nota2 + nota3) >= 21 ):
+
+if ( (nota1 >= 7) and (nota2 >=7) and (nota3) >=7 ):
+    print('Passou de ano.')
+else:
+    print('Não passou de ano.')

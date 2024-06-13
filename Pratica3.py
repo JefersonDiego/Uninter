@@ -79,6 +79,7 @@ else:
 # Isóceles: dois lados iguais
 # Escaleno: três lados difierentes
 
+'''
 lado1 = int(input('Digite o primeiro lado do triângulo: '))
 lado2 = int(input('Digite o segundo lado do triângulo: '))
 lado3 = int(input('Digite o terceiro lado do triângulo: '))
@@ -96,3 +97,27 @@ else:
         print('Isósceles')
     else:
         print('Escaleno')
+'''
+
+# Exercício 2
+
+# Escreva um algoritmo que leia dois valores numéricos e que pergunte ap usuário
+# qual operação ele deseja realizar:
+# adição (+), subtração (-), multiplicação (*) ou divisão (/).
+# Exiba na tela o resultado da operação desejada.
+
+val1 = float(input('Digite o primeiro valor: '))
+val2 = float(input('Digite o segundo valor: '))
+
+operacao = input('Qual operação deseja realizar?\nAdição: +\nSubtração: -\nMultiplicação: *\nDivisão: /\n')
+
+if (operacao == '+'):
+    print('Resultado: {0:.3g}.'.format(val1 + val2))
+elif (operacao == '-'):
+    print('Resultado: {0:.3g}.'.format(val1 - val2))
+elif (operacao == '*'):
+    print('Resultado: {0:.3g}.'.format(val1 * val2))
+elif (operacao == '/'):
+    print('Resultado: {0:.3g}.'.format(val1 / val2))
+else:
+    print('Operação inválida.')

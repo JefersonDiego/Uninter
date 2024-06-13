@@ -1,3 +1,4 @@
+'''
 # Exercícios de fixação
 
 # Escreva as seguintes expressões booleanas em linguagem Python
@@ -66,3 +67,32 @@ if (cima and baixo):
     print('Decida-se')
 else:
     print('Você escolheu um caminho!')
+
+'''
+
+#Exercício 1
+
+# Faça um algoritmo que receba três valores, representando os lados de um triângulo
+# fornecidos pelo usuário. Verifique se os valores formam um triângulo e classifique
+# como:
+# Equilátero: três lados iguais
+# Isóceles: dois lados iguais
+# Escaleno: três lados difierentes
+
+lado1 = int(input('Digite o primeiro lado do triângulo: '))
+lado2 = int(input('Digite o segundo lado do triângulo: '))
+lado3 = int(input('Digite o terceiro lado do triângulo: '))
+
+
+
+if (lado1 == 0 or lado2 == 0 or lado3 == 0):
+    print('Os valores precisam ser maiores do que 0.')
+elif ((lado1 > lado2 + lado3) or (lado2 > lado1 + lado3) or (lado3 > lado1 + lado2)):
+    print('Um dos lados não pode ser maior do que a soma dos outros dois.')
+else:
+    if (lado1 == lado2 and lado2 == lado3):
+        print('Equilátero')
+    elif (lado1 == lado2 or lado2 == lado3 or lado1 == lado3):
+        print('Isósceles')
+    else:
+        print('Escaleno')

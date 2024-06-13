@@ -85,9 +85,41 @@ print('Login efetuado com sucesso.')
 # Também interpreta uma string vazia (sem caracteres ou espaço)
 # como False e uma string com conteúdo como True
 
+'''
 nome = ''
 
 while not nome:
     # String vazia é false, o not torna true, quando a string estiver
     # com conteúdo, o not torna ela false e o laço acaba
-    nome = input('Digite seu nome: ')  
+    nome = input('Digite seu nome: ')
+'''
+
+# Estrutura de repetição For (para)
+
+'''
+for i in range(5):
+    print(i)
+    
+print('')
+
+for i in range(1,5,1):
+    print(i)
+'''
+
+'''
+frase = 'Lógica de Programação e Algoritmos'
+for i in range(0, len(frase), 1):
+    print(frase[i], end='')
+'''
+
+# Escreva um algoritmo que calcule a média dos números pares de 1 a 100
+# (1 e 100 inclusos). Implemente o laço for.
+
+x = 0
+cont = 0
+for i in range(1,101,1):
+    if (i % 2 == 0):
+        x += i
+        cont += 1
+
+print('A média é {}'.format(x/cont))

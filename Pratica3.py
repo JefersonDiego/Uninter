@@ -106,6 +106,7 @@ else:
 # adição (+), subtração (-), multiplicação (*) ou divisão (/).
 # Exiba na tela o resultado da operação desejada.
 
+'''
 val1 = float(input('Digite o primeiro valor: '))
 val2 = float(input('Digite o segundo valor: '))
 
@@ -121,3 +122,38 @@ elif (operacao == '/'):
     print('Resultado: {0:.3g}.'.format(val1 / val2))
 else:
     print('Operação inválida.')
+'''
+
+# Exercício 3
+
+# Escreva um programa que calcule o preço a pagar pelo fornecimento de energia
+# elétrica. pergunte a quantidade de kWh consumida e o tipo de instalação: R para
+# residênicas, I para indústrias e C para comércio.
+
+kwh = float(input('Qual foi o seu consumo em kWh nesse mês? '))
+tipo_instalacao = input('Qual é o tipo de instalação?\nR: Residêncial\nI: Industrial\nC: Comercial\n')
+
+if (kwh == 0):
+    print('Não houve consume este mês.')
+elif(kwh < 0):
+    print('O consumo precisa ser um valor positivo.')
+else:
+    if (tipo_instalacao == 'r' or tipo_instalacao == 'R'):
+        if (kwh <= 500):
+            print('O total a pagar é R${0:.6g}'.format(kwh*0.4))
+        else:
+            print('O total a pagar é R${0:.6g}'.format(kwh*0.65))
+    
+    elif (tipo_instalacao == 'i' or tipo_instalacao == 'I'):
+        if (kwh <= 5000):
+            print('O total a pagar é R${0:.6g}'.format(kwh*0.55))
+        else:
+            print('O total a pagar é R${0:.6g}'.format(kwh*0.60))
+    
+    elif (tipo_instalacao == 'c' or tipo_instalacao == 'C'):
+        if (kwh <= 1000):
+            print('O total a pagar é R${0:.6g}'.format(kwh*0.55))
+        else:
+            print('O total a pagar é R${0:.6g}'.format(kwh*0.60))
+    else:
+        print('Opção inválida.')

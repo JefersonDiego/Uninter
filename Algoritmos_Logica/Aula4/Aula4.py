@@ -114,7 +114,7 @@ for i in range(0, len(frase), 1):
 
 # Escreva um algoritmo que calcule a média dos números pares de 1 a 100
 # (1 e 100 inclusos). Implemente o laço for.
-
+'''
 x = 0
 cont = 0
 for i in range(1,101,1):
@@ -123,3 +123,16 @@ for i in range(1,101,1):
         cont += 1
 
 print('A média é {}'.format(x/cont))
+'''
+
+# Estruturas de repetição aninhadas
+
+# Escreva um algoritmo em Python que calcule a tabuada de
+# todos os números de 1 até 10, e, para cada número, vamos
+# calcular a tabuada multiplicando-o pelo intervado de 0 a
+# 10.
+
+for i in range(1,11):
+    for j in range(1,11):
+        print('O valor de {} x {} é {}'.format(i, j, i * j))
+    print('')

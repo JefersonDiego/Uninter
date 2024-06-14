@@ -142,11 +142,56 @@ omelete()
 print(ovos)
 '''
 
+
 # Retorno de valores
 
+'''
 def soma3(x = 0, y = 0, z = 0):
     res = x + y + z
     return res
 
 retornado = soma3(1, 2, 3)
 print(retornado)
+
+retornado1 = soma3(1, 2, 3)
+retornado2 = soma3(1, 2)
+retornado3 = soma3(1)
+
+print(retornado1, retornado2, retornado3)
+'''
+
+# Exercício
+# Escreva uma função para validar uma string. Essa função recebe
+# como parâmetro a string, o número mínimo e máximo de caracteres.
+# Retorne verdadeiro se o tamanho da string estiver entre os valores
+# de mínimo e máximo, e falso, caso contrário.
+
+'''
+def valida_string(pal, min, max):
+    if (len(pal) >= min and len(pal) <= max):
+        return True
+    else:
+        return False
+
+palavra = input('Digite uma palavra: ')
+minimo = int(input('Digite um valor para o mínimo de caracteres: '))
+maximo = int(input('Digite um valor para o máximo de caracteres: '))
+
+tamanho_string = valida_string(palavra, minimo, maximo)
+
+if (tamanho_string):
+    print('O tamanho da string está correto.')
+else:
+    print('O tamanho da string está incorreto.')
+'''
+
+def valida_string(pergunta, min, max):
+    s1 = input(pergunta)
+    tam = len(s1)
+    while ((tam < min) or (tam > max)):
+        s1 = input(pergunta)
+        tam = len(s1)
+    return s1
+
+x = valida_string('Digite uma string: ', 10, 30)
+print('Você digitou a string: {}.\nDado válido. Encerrando o programa...'.format(x))

@@ -184,7 +184,7 @@ if (tamanho_string):
 else:
     print('O tamanho da string está incorreto.')
 '''
-
+'''
 def valida_string(pergunta, min, max):
     s1 = input(pergunta)
     tam = len(s1)
@@ -195,3 +195,68 @@ def valida_string(pergunta, min, max):
 
 x = valida_string('Digite uma string: ', 10, 30)
 print('Você digitou a string: {}.\nDado válido. Encerrando o programa...'.format(x))
+'''
+
+# Tratamento de erros
+'''
+while True:
+    try:
+        x = int(input('Por favor digite um número: '))
+        break
+    except ValueError:
+        print('Número inválido. Tente novamente...')
+'''
+
+'''
+i = 0
+while True:
+    try:
+        nome = input('Por favor digite o seu nome: ')
+        ind = int(input('Digite o índice do seu nome digitado: '))
+        print(nome[ind])
+        break
+    except ValueError:
+        print('Nome inválido. Tente novamente.')
+    except IndexError:
+        print('Índice inválido. tente novamente.')
+    finally:
+        print('Tentativa {}.'.format(i))
+        i += 1
+'''
+
+'''
+def div():
+    try:
+        num1 = int(input('Digite um número: '))
+        num2 = int(input('Digite um número: '))
+        res = num1 / num2
+    except ZeroDivisionError:
+        print('Erro de divisão por zero.')
+    except:
+        print('Algo deu errado.')
+    else:
+        return res
+    finally:
+        print('Executará sempre.')
+
+print(div())
+'''
+
+#Funções lambda
+# Funções simples, sem nome
+# Podem ser escritas em uma só linha dentro do código
+
+'''
+res = lambda x: x * x
+print(res(3))
+
+soma = lambda x, y: x + y
+print(soma(3, 5))
+'''
+
+# Faça uma função lambda que receba dois valores numéricos como parâmetro.
+# Ao primeiro valor, sempre some 5. Em seguida, multiplique ambos e retorne
+# o resultado
+
+res = lambda x, y: (x + 5) * y
+print(res(1, 10))

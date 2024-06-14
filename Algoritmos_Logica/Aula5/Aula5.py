@@ -1,0 +1,152 @@
+# Funções
+
+'''
+
+print('|','--' * 10,'|')
+print('|','--' * 10,'|')
+print('          MENU')
+print('|','--' * 10,'|')
+print('|','--' * 10,'|')
+
+print('')
+
+def realce():
+    print('|','--' * 10,'|')
+    print('|','--' * 10,'|')
+
+realce()
+print('          MENU')
+realce()
+
+print('')
+
+def realce(s1):
+    print('|','--' * 10,'|')
+    print('|','--' * 10,'|')
+    print(s1)
+    print('|','--' * 10,'|')
+    print('|','--' * 10,'|')
+    
+realce('          MENU')
+
+print('')
+
+def soma(x, y):
+    res = x + y
+    print(res)
+    
+soma(13, 21)
+soma(y = 20, x = 20)
+
+print('')
+
+def sub2(x = 1, y = 1):
+    res = x - y
+    print(res)
+
+sub2()
+'''
+
+# Exercício
+
+# Escreva uma rotina que vrie uma borda ao redor de uma palavra, para destacá-la
+# como sendo um título. A rotina deve receber como parâmetro a palavra a ser
+# destacada. O tamanho da caixa de texto deverá ser adaptável, de acordo com o
+# tamanho da palavra.
+
+'''
+palavra = input('Digite uma palavara: ')
+
+def destaque(palavra):
+    tamanho = len(palavra)
+    if tamanho:
+        print('+', '-' * tamanho, '+')
+        print('|', palavra, '|')
+        print('+', '-' * tamanho, '+')
+
+destaque(palavra)
+'''
+
+# Escopo de variáveis
+
+'''
+def omelete():
+    ovos = 12
+
+omelete()
+# print(ovos)
+# # a variável ovos não possui escopo global,
+# ela só existe dentro da função omelete
+'''
+
+'''
+def omelete():
+    ovos = 12
+    bacon()
+    print(ovos)
+
+def bacon():
+    ovos = 6
+# apesar da veriável ovos receber 6, ela não altera o conteúdo da variável
+# dentro de omelete, pois ambas estão no escopo local de cada função
+
+omelete()
+'''
+
+'''
+def omelete():
+    ovos = 12
+    print('Ovos (omelete)= ', ovos)
+
+def bacon():
+    ovos = 6
+    print('Ovos (bacon) = ', ovos)
+    omelete()
+    print('Ovos (bacon) = ', ovos)
+
+ovos = 2
+bacon()
+print('Ovos (principal)= ', ovos)
+'''
+
+# Instrução global
+# Força o algoritmo a não criar uma variável local de mesmo nome e
+# manipular somente a global dentro de uma função
+
+'''
+def omelete():
+    global ovos
+    ovos = 6
+
+ovos = 12
+omelete()
+print(ovos)
+'''
+
+'''
+def omelete():
+    global ovos
+    ovos = 6
+    bacon()
+
+def bacon():
+    ovos = 12
+    pimenta()
+
+def pimenta():
+    print(ovos)
+    
+
+ovos = 4
+omelete()
+print(ovos)
+'''
+
+# Retorno de valores
+
+def soma3(x = 0, y = 0, z = 0):
+    res = x + y + z
+    return res
+
+retornado = soma3(1, 2, 3)
+print(retornado)

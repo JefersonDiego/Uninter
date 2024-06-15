@@ -29,12 +29,71 @@
 
 # Desempacotamento de parâmetros em funções
 
-def soma(*num):
-    acumulador = 0
-    print('Tupla: {}'.format(num))
-    for i in num:
-        acumulador += i
-    return acumulador
+# def soma(*num):
+#     acumulador = 0
+#     print('Tupla: {}'.format(num))
+#     for i in num:
+#         acumulador += i
+#     return acumulador
 
-print('Resultado: {}\n'.format(soma(1, 2)))
-print('Resultado: {}\n'.format(soma(1, 2, 3, 4, 5, 6, 7)))
+# print('Resultado: {}\n'.format(soma(1, 2)))
+# print('Resultado: {}\n'.format(soma(1, 2, 3, 4, 5, 6, 7)))
+
+
+# Listas
+
+# Estrutura de dadods dinâmica
+# Podemos alterar dados e tamanho
+# Indexadas por valor numéricos inteiros
+# Representada no Python pelos conchetes []
+
+# mochila = ('Machado', 'Camisa', 'Bacon', 'Abacate')
+# print('Tupla: ', mochila)
+
+# mochila = ['Machado', 'Camisa', 'Bacon', 'Abacate']
+# print('Lista: ', mochila)
+
+# mochila[2] = 'Laranja'
+# print('Lista: ', mochila)
+
+# # Manipulando listas
+
+# mochila.append('Ovos') # Adiciona na final da lista
+# print('Lista: ', mochila)
+
+# mochila.insert(1, 'Canivete') # insere na posição informada
+# print('Lista: ', mochila)
+
+# del mochila[1] # deleta o índice informado
+# print('Lista: ', mochila)
+
+# mochila.remove('Ovos') # delete o dado informado
+# print('Lista: ', mochila)
+
+# Referência de listas
+
+lista_original = [5, 7, 9, 11]
+lista_referenciada = lista_original
+
+print('Lista origial: {}'.format(lista_original))
+print('Lista referenciada: {}'.format(lista_referenciada))
+
+lista_original[0] = 2
+print('Lista origial: {}'.format(lista_original))
+print('Lista referenciada: {}'.format(lista_referenciada))
+# não é uma cópia, apenas faz uma referência a lista original
+# é como se tivesse outro nome, mas está olhando para o mesmo lugar
+
+# Cópia
+
+lista_original = [5, 7, 9, 11]
+lista_referenciada = lista_original[:]
+
+print('Lista origial: {}'.format(lista_original))
+print('Lista referenciada: {}'.format(lista_referenciada))
+
+lista_original[0] = 2
+print('Lista origial: {}'.format(lista_original))
+print('Lista referenciada: {}'.format(lista_referenciada))
+# agora fz de fato uma cópia
+

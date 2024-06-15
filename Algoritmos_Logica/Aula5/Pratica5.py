@@ -57,6 +57,7 @@
 # if (not(fatorial(num))):
 #     print('Você digitou um número negativo.')
 
+
 # Exercício 3
 
 # Suponha que você é um colecionador de jogos de videogames. Escreva um algoritmo
@@ -67,13 +68,88 @@
 # Além disso, armazene todos os dados em um arquivo de texto que deve ser salvo em
 # disco e manter os dados cadastrados.
 
-print('+------------------+')
-print('|-------MENU-------|')
-print('|------------------|')
-print('|1. NOVO ITEM------|')
-print('|2. LISTAR TUDO----|')
-print('|3. SAIR-----------|')
-print('+------------------+')
-opcao = int(input('Digite uma opção: '))
+# Função que valida a opção do menu
+def valida_opcao(pergunta, min, max):
+    x = int(input(pergunta))
+    while ((x < min) or (x > max)):
+        x = int(input(pergunta))
+    return x
+
+# Função que verifica a existência do arquivo
+def arquivoExiste(nomeArquivo):
+    try:
+        a = open(nomeArquivo, 'rt')
+        a.close()
+    except FileNotFoundError:
+        return False
+    else:
+        return True
+
+# Função que cria um arquivo
+def criarArquivo(nomeArquivo):
+    try:
+        a = open(nomeArquivo, 'wt+')
+        a.close()
+    except:
+        print('Erro na criação do arquivo.')
+    else:
+        print('Arquivo \"{}\" criado com sucesso.\n'.format(arquivo))
+
+# Função que cadastra um jogo
+def cadastrarJogo(nomeArquivo, nomeJogo, nomeVideogame):
+    try:
+        a = open(nomeArquivo, 'at')
+    except:
+        print('Erro ao abrir arquivo.')
+    else:
+        a.write('{};{}\n'.format(nomeJogo, nomeVideogame))
+    finally:
+        a.close()
+
+# Função que lista o arquivo
+def listarArquivo(nomeArquivo):
+    try:
+        a = open(nomeArquivo, 'rt')
+    except:
+        print('Erro ao ler arquivo.')
+    else:
+        print(a.read())
+    finally:
+        a.close()
+        
+
+# Criação do arquivo
+
+arquivo = 'games.txt'
+if arquivoExiste(arquivo):
+    print('O arquivo já foi criado.')
+else:
+    print('Arquivo não encontrado.')
+    criarArquivo(arquivo)
+
+
+
+while True:
+    print('+------------------+')
+    print('|-------MENU-------|')
+    print('|------------------|')
+    print('|1. NOVO ITEM------|')
+    print('|2. LISTAR TUDO----|')
+    print('|3. SAIR-----------|')
+    print('+------------------+')
+    opcao = valida_opcao('Digite uma opção: ', 1, 3)
+
+    if (opcao == 1):
+        print('Opção Novo item')
+        nomeJogo = input('Nome do jogo: ')
+        nomeVideogame = input('Nome do videogame: ')
+        cadastrarJogo(arquivo, nomeJogo, nomeVideogame)
+    elif (opcao == 2):
+        print('Opção listar tudo')
+        listarArquivo(arquivo)
+    elif (opcao == 3):
+        print('Saindo...')
+        break
+
 
 

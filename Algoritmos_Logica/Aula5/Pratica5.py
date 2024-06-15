@@ -58,7 +58,7 @@
 #     print('Você digitou um número negativo.')
 
 
-# Exercício 3
+# Exercício 2
 
 # Suponha que você é um colecionador de jogos de videogames. Escreva um algoritmo
 # que permita cadastrar esses jogos informando o nome e a qual videogame ele pertence.

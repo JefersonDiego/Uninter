@@ -160,3 +160,100 @@
 #     soma += item[1] * item[2]
 # print('-' * 20)
 # print('Total a ser pago: {}'.format(soma))
+
+# Dicionários
+
+# Estrutura de dados dinâmica
+# Podemos alterar dados e tamanho
+# Indexados por chaves (palavras-chave)
+# Representado em Python por chaves {}
+
+# mochila = ('Laptop', 'Smartphone', 'Power Bank', 'Carregadores e Cabos')
+# print('Tupla: ', mochila)
+
+# print()
+
+# mochila = ['Laptop', 'Smartphone', 'Power Bank', 'Carregadores e Cabos']
+# print('Lista: ', mochila)
+
+# print()
+
+# mochila = {'Laptop':1, 'Smartphone':2, 'Power Bank':3, 'Carregadores e Cabos':4}
+# print('Dicionário: ', mochila)
+
+# print()
+
+# game = {'nome':'Super Mario',
+#         'desenvolvedora':'Nintendo',
+#         'ano':1990}
+# print(game)
+
+# print()
+
+# print(game['nome'])
+# print(game['desenvolvedora'])
+# print(game['ano'])
+
+# # Métodos para dicionários
+
+# print(game.values())
+# print(game.keys())
+# print(game.items())
+
+# print()
+
+# for keys in game.keys():
+#     print(keys)
+    
+# print()
+
+# for keys, values in game.items():
+#     print('{} = {}'.format(keys, values))
+
+
+# Listas com dicionários
+
+# games = []
+# game1 = {'nome':'Super Mario',
+#          'videogame':'Super Nintendo',
+#          'ano':1990}
+# game2 = {'nome':'Zelda Ocarina of Time',
+#          'videogame':'Nintendo 64',
+#          'ano':1998}
+# game3 = {'nome':'Pokemon Yellow',
+#          'videogame':'Game Boy',
+#          'ano':1999}
+
+# games = [game1, game2, game3]
+# print(games)
+
+# game = {}
+# games = []
+
+# for i in range(3):
+#     game['nome'] = input('Qual o nome do jogo? ')
+#     game['videogame'] = input('Para qual video-game ele foi lançado? ')
+#     game['ano'] = input('Qual o ano de lançamento? ')
+#     games.append(game.copy())
+# print('-' * 20)
+# for jogos in games:
+#     for chave, valor in jogos.items():
+#         print('O campo {} tem o valor {}.'.format(chave, valor))
+
+# Dicionários com listas
+
+# games = {'nome':['Super Mario', 'Zelda Ocarina of Time', 'Pokemon Yellow'],
+#          'videogame':['Super Nintendo', 'Nintendo 64', 'Game Boy'],
+#          'ano':[1990, 1998, 1999]}
+# print(games)
+
+# games = {'nome':[], 'videogame':[], 'ano':[]}
+# for i in range(3):
+#     nome = input('Qual o nome do jogo? ')
+#     videogame = input('Para qual video-game ele foi lançado? ')
+#     ano = input('Qual o ano de lançamento? ')
+#     games['nome'].append(nome)
+#     games['videogame'].append(videogame)
+#     games['ano'].append(ano)
+# print('-' * 20)
+# print(games)

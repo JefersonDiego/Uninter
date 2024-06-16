@@ -257,3 +257,58 @@
 #     games['ano'].append(ano)
 # print('-' * 20)
 # print(games)
+
+
+# Trabalhando com métodos em strings
+
+# Uma string assim com a a tupla, é imutável.
+# Porém é possivel fazer uma alteração na string, utilizando uma lista,
+# para torná-la mutável.
+
+# s1 = 'Algoritmos'
+# print(s1)
+# s1[0] = 'a' # Não é possível fazer isso
+# print(s1)
+
+
+s1 = list('Algoritmos')
+print(s1) # print separado
+print(''.join(s1)) # print agrupado
+
+# Verificando caracteres
+
+s1 = 'Lógica de Programação e Algoritmos'
+print(s1.startswith('Lógica'))
+print(s1.endswith('algoritmos'))
+print(s1.lower().endswith('algoritmos'))
+print(s1.upper())
+print(s1.lower())
+
+print()
+
+print(s1.count('a'))
+
+print(s1.lower().count('a'))
+
+s1 = 'Um mafagafinho, dois mafagafinhos, três mafagafinhos ...'
+print(s1.lower().count('mafagafinhos'))
+
+print(s1.split(' '))
+
+print(s1.replace('mafagafinho', 'gatinho'))
+
+print(s1.replace('mafagafinho', 'gatinho', 1))
+
+# Validando tipo de dados
+
+s1 = 'Lógica de Programação e Algoritmos'
+s2 = '42'
+
+print(s1.isalnum()) # False, pois tem espaço junto (aceita somente letras e números)
+print(s2.isalnum()) # Somente números
+
+print(s1.isalpha()) # False, somente letras e acentos
+print(s2.isalpha())
+
+s1 = 'LógicadeProgramaçãoeAlgoritmos'
+print(s1.isalpha()) # True, possui somente letras

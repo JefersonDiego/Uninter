@@ -72,28 +72,91 @@
 
 # Referência de listas
 
-lista_original = [5, 7, 9, 11]
-lista_referenciada = lista_original
+# lista_original = [5, 7, 9, 11]
+# lista_referenciada = lista_original
 
-print('Lista origial: {}'.format(lista_original))
-print('Lista referenciada: {}'.format(lista_referenciada))
+# print('Lista origial: {}'.format(lista_original))
+# print('Lista referenciada: {}'.format(lista_referenciada))
 
-lista_original[0] = 2
-print('Lista origial: {}'.format(lista_original))
-print('Lista referenciada: {}'.format(lista_referenciada))
-# não é uma cópia, apenas faz uma referência a lista original
-# é como se tivesse outro nome, mas está olhando para o mesmo lugar
+# lista_original[0] = 2
+# print('Lista origial: {}'.format(lista_original))
+# print('Lista referenciada: {}'.format(lista_referenciada))
+# # não é uma cópia, apenas faz uma referência a lista original
+# # é como se tivesse outro nome, mas está olhando para o mesmo lugar
 
-# Cópia
+# # Cópia
 
-lista_original = [5, 7, 9, 11]
-lista_referenciada = lista_original[:]
+# lista_original = [5, 7, 9, 11]
+# lista_referenciada = lista_original[:]
 
-print('Lista origial: {}'.format(lista_original))
-print('Lista referenciada: {}'.format(lista_referenciada))
+# print('Lista origial: {}'.format(lista_original))
+# print('Lista referenciada: {}'.format(lista_referenciada))
 
-lista_original[0] = 2
-print('Lista origial: {}'.format(lista_original))
-print('Lista referenciada: {}'.format(lista_referenciada))
-# agora fz de fato uma cópia
+# lista_original[0] = 2
+# print('Lista origial: {}'.format(lista_original))
+# print('Lista referenciada: {}'.format(lista_referenciada))
+# # agora fz de fato uma cópia
 
+# # Strings e listas dentro de lista
+
+# # Strings dentro de lista 
+# mochila = ['Machado', 'Camisa', 'Bacon', 'Abacate']
+# print(mochila[0])
+
+# mochila = ['Machado', 'Camisa', 'Bacon', 'Abacate']
+# print(mochila[0][0])
+# print(mochila[2][1])
+
+# print()
+
+# mochila = ['Machado', 'Camisa', 'Bacon', 'Abacate']
+# for item in mochila:
+#     for letra in item:
+#         print(letra, end=' ')
+#     print()
+
+# print()
+
+# mochila = ['Machado', 'Camisa', 'Bacon', 'Abacate']
+# for i in range(0, len(mochila), 1):
+#     for j in range(0, len(mochila[i]), 1):
+#         print(mochila[i][j], end=' ')
+#     print()
+
+# Listas dentro de listas
+
+# Imagine uma situação na qual você deve realizar o cadastro de
+# uma lista de compras em um sistema. Cada produto comprado deverá
+# ser registrado com seu nome, quantidade e valor unitário.
+
+# item = []
+# mercado = []
+
+# for i in range(3):
+#     item.append(input('Digite o nome do item: '))
+#     item.append(int(input('Digite a quantidade: ')))
+#     item.append(float(input('Digite o valor: ')))
+#     mercado.append(item[:])
+#     item.clear()
+# print(mercado)
+
+# print()
+
+# mercado = []
+
+# for i in range(3):
+#     nome = input('Digite o nome do item: ')
+#     qtd = int(input('Digite a quantidade: '))
+#     valor = float(input('Digite o valor: '))
+#     mercado.append([nome, qtd, valor])
+# print(mercado)
+
+# soma = 0
+# print('Lista de compras: ')
+# print('-' * 20)
+# print('item | quantidade | valor unitário | total do item')
+# for item in mercado:
+#     print('{} | {} | {} | {}'.format(item[0], item[1], item[2], item[1] * item[2]))
+#     soma += item[1] * item[2]
+# print('-' * 20)
+# print('Total a ser pago: {}'.format(soma))

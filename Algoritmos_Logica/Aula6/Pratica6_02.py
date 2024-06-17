@@ -28,18 +28,18 @@
 
 # Checagem de tipo de um dado.
 
-def checagem_tipo(dado):
-    match dado:
-        case str(dado):
-            print('String:', dado)
-        case int(dado):
-            print('Inteiro: ', dado)
-        case float(dado):
-            print('Float: ', dado )
-        case _:
-            print('Tipo de dado desconhecido.')
+# def checagem_tipo(dado):
+#     match dado:
+#         case str(dado):
+#             print('String:', dado)
+#         case int(dado):
+#             print('Inteiro: ', dado)
+#         case float(dado):
+#             print('Float: ', dado )
+#         case _:
+#             print('Tipo de dado desconhecido.')
 
-dados = ['Python', 42, 3.14, 23, 'C']
+# dados = ['Python', 42, 3.14, 23, 'C']
 
-for dado in dados:
-    checagem_tipo(dado)
+# for dado in dados:
+#     checagem_tipo(dado)

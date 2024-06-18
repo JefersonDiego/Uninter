@@ -28,6 +28,7 @@ def mostrarMenu():
     print('=' * 30)
 
 arquivo = 'score.txt'
+dados = ''
 
 if (fh.existeArquivo(arquivo)):
     print('Arquivo localizado no computador.')
@@ -42,9 +43,18 @@ while True:
     match(opcao):
         case 1:
             print('Iniciar jogo...')
-            
+            j.jogar()
         case 2:
             print('SCORE')
+            dados = fh.listaArquivo('score.txt')
+            if not dados:
+                print('Sem score.')
+            else:
+                i = 1
+                for jogador in dados:
+                    jogador = jogador.split(';')
+                    print('{}. {} - Pontuação: {}'.format(i, jogador[0], jogador[1][:-1]))
+                    i += 1
         case 3:
             print('Saindo do jogo...')
             break

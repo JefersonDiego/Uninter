@@ -213,32 +213,33 @@
 
 # Listas com dicionários
 
-# games = []
-# game1 = {'nome':'Super Mario',
-#          'videogame':'Super Nintendo',
-#          'ano':1990}
-# game2 = {'nome':'Zelda Ocarina of Time',
-#          'videogame':'Nintendo 64',
-#          'ano':1998}
-# game3 = {'nome':'Pokemon Yellow',
-#          'videogame':'Game Boy',
-#          'ano':1999}
+games = []
+game1 = {'nome':'Super Mario',
+         'videogame':'Super Nintendo',
+         'ano':1990}
+game2 = {'nome':'Zelda Ocarina of Time',
+         'videogame':'Nintendo 64',
+         'ano':1998}
+game3 = {'nome':'Pokemon Yellow',
+         'videogame':'Game Boy',
+         'ano':1999}
 
-# games = [game1, game2, game3]
-# print(games)
+games = [game1, game2, game3]
+print(games)
 
-# game = {}
-# games = []
+game = {}
+games = []
 
-# for i in range(3):
-#     game['nome'] = input('Qual o nome do jogo? ')
-#     game['videogame'] = input('Para qual video-game ele foi lançado? ')
-#     game['ano'] = input('Qual o ano de lançamento? ')
-#     games.append(game.copy())
-# print('-' * 20)
-# for jogos in games:
-#     for chave, valor in jogos.items():
-#         print('O campo {} tem o valor {}.'.format(chave, valor))
+for i in range(3):
+    game['nome'] = input('Qual o nome do jogo? ')
+    game['videogame'] = input('Para qual video-game ele foi lançado? ')
+    game['ano'] = input('Qual o ano de lançamento? ')
+    games.append(game.copy())
+print('-' * 20)
+print(games)
+for jogos in games:
+    for chave, valor in jogos.items():
+        print('O campo {} tem o valor {}.'.format(chave, valor))
 
 # Dicionários com listas
 
@@ -271,44 +272,44 @@
 # print(s1)
 
 
-s1 = list('Algoritmos')
-print(s1) # print separado
-print(''.join(s1)) # print agrupado
+# s1 = list('Algoritmos')
+# print(s1) # print separado
+# print(''.join(s1)) # print agrupado
 
 # Verificando caracteres
 
-s1 = 'Lógica de Programação e Algoritmos'
-print(s1.startswith('Lógica'))
-print(s1.endswith('algoritmos'))
-print(s1.lower().endswith('algoritmos'))
-print(s1.upper())
-print(s1.lower())
+# s1 = 'Lógica de Programação e Algoritmos'
+# print(s1.startswith('Lógica'))
+# print(s1.endswith('algoritmos'))
+# print(s1.lower().endswith('algoritmos'))
+# print(s1.upper())
+# print(s1.lower())
 
-print()
+# print()
 
-print(s1.count('a'))
+# print(s1.count('a'))
 
-print(s1.lower().count('a'))
+# print(s1.lower().count('a'))
 
-s1 = 'Um mafagafinho, dois mafagafinhos, três mafagafinhos ...'
-print(s1.lower().count('mafagafinhos'))
+# s1 = 'Um mafagafinho, dois mafagafinhos, três mafagafinhos ...'
+# print(s1.lower().count('mafagafinhos'))
 
-print(s1.split(' '))
+# print(s1.split(' '))
 
-print(s1.replace('mafagafinho', 'gatinho'))
+# print(s1.replace('mafagafinho', 'gatinho'))
 
-print(s1.replace('mafagafinho', 'gatinho', 1))
+# print(s1.replace('mafagafinho', 'gatinho', 1))
 
-# Validando tipo de dados
+# # Validando tipo de dados
 
-s1 = 'Lógica de Programação e Algoritmos'
-s2 = '42'
+# s1 = 'Lógica de Programação e Algoritmos'
+# s2 = '42'
 
-print(s1.isalnum()) # False, pois tem espaço junto (aceita somente letras e números)
-print(s2.isalnum()) # Somente números
+# print(s1.isalnum()) # False, pois tem espaço junto (aceita somente letras e números)
+# print(s2.isalnum()) # Somente números
 
-print(s1.isalpha()) # False, somente letras e acentos
-print(s2.isalpha())
+# print(s1.isalpha()) # False, somente letras e acentos
+# print(s2.isalpha())
 
-s1 = 'LógicadeProgramaçãoeAlgoritmos'
-print(s1.isalpha()) # True, possui somente letras
+# s1 = 'LógicadeProgramaçãoeAlgoritmos'
+# print(s1.isalpha()) # True, possui somente letras

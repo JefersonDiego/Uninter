@@ -77,6 +77,7 @@ def consultar_funcionarios(lista_func): # [EXIGÊNCIA DE CÓDIGO 4 de 8]
                 consulta_id(lista_func)
                 continue
             case 3:
+                consulta_setor(lista_func)
                 continue
             case 4:
                 return
@@ -99,29 +100,57 @@ def valida_id(lista_func):
             elif (id <0):
                 print('Digite um valor maior do que 0.')
             else:
-                return
+                return 0
         except ValueError:
             print('ID deve ser um número inteiro.')
+
+def imprime_consulta(busca, item, lista):
+    for func in lista:
+        for chave, valor in func.items():
+            if (chave == busca) and (valor == item):
+                for i, j in func.items():
+                    print('{}: {}'.format(i, j))
+                print()
+    return 0
         
 def consulta_id(lista_func):
-    id_consulta = valida_id(lista_func)
-    if id_consulta == 0:
-        return
-    print('ID {}'.format(id_consulta))
+    while True:
+        id_consulta = valida_id(lista_func)
+        if id_consulta == 0:
+            return
+        id_consulta = imprime_consulta('id', id_consulta, lista_func)
+
+
+def valida_setor(lista_func):
+    while True:
+        try:            
+            setor = input('Informe o setor a ser consultada ou 0 para sair: ')
+            if setor != '0':
+                for keys in lista_func:
+                    if keys['setor'] == setor:
+                        return setor
+                print('Setor não encontrado.')
+            else:
+                return 0
+        except ValueError:
+            print('Valor não reconhecido.')
+
+def consulta_setor(lista_func):
+    while True:
+        setor_consulta = valida_setor(lista_func)
+        if setor_consulta == 0:
+            return
+        setor_consulta = imprime_consulta('setor', setor_consulta, lista_func)
 
 
 lista_funcionarios = [{'id':1, 'nome':'Nome1', 'setor':'setor1', 'salario':1001},
-                      {'id':2, 'nome':'Nome2', 'setor':'setor2', 'salario':1002},
-                      {'id':3, 'nome':'Nome3', 'setor':'setor3', 'salario':1003},
-                      {'id':4, 'nome':'Nome4', 'setor':'setor4', 'salario':1004}]
+                      {'id':2, 'nome':'Nome2', 'setor':'setor1', 'salario':1002},
+                      {'id':1, 'nome':'Nome3', 'setor':'setor3', 'salario':1003},
+                      {'id':4, 'nome':'Nome4', 'setor':'setor1', 'salario':1004}]
 id_global = 4901954 # [EXIGÊNCIA DE CÓDIGO 2 de 8]
 
-
-for keys in lista_funcionarios:
-    if (keys['id']) == 2:
-        print(keys['id'])
-
 print('Bem-vindos a empresa do Jéferson Diego Leidemer\n') # [EXIGÊNCIA DE CÓDIGO 1 de 8]
+
 
 opcao = imprime_menu_principal()
 while True:

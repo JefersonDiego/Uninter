@@ -25,4 +25,4 @@ print('O valor das parcelas é de R${0:.2f}'.format(valorDaParcela))
 
 # realiza o cálculo do valor total e imprime na tela
 valorTotalParcelado = valorDaParcela * qtdParcelas # [EXIGÊNCIA DE CÓDIGO 4 de 6]
-print('O valor total da sua compra é de R${0:.2f}'.format(valorTotalParcelado))
+print('O valor total parcelado é de R${0:.2f}'.format(valorTotalParcelado))

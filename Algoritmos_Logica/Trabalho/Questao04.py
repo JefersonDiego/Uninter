@@ -164,11 +164,6 @@ def remove_funcionario(lista_func): # [EXIGÊNCIA DE CÓDIGO 5 de 8]
             print('Funcionário removido.')
             return lista_func
 
-lista_funcionarios = [{'id':4901955, 'nome':'Nome1', 'setor':'setor1', 'salario':1001},
-                      {'id':4901956, 'nome':'Nome2', 'setor':'setor1', 'salario':1002},
-                      {'id':4901957, 'nome':'Nome3', 'setor':'setor3', 'salario':1003},
-                      {'id':4901958, 'nome':'Nome4', 'setor':'setor1', 'salario':1004}]
-
 lista_funcionarios = []
 
 id_global = 4901954 # [EXIGÊNCIA DE CÓDIGO 2 de 8]

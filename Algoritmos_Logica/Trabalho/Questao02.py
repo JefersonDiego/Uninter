@@ -55,20 +55,20 @@ while True: # [EXIGÊNCIA DE CÓDIGO 7 de 8]
         if (tamanho == 'p'):
          valor += 16 # [EXIGÊNCIA DE CÓDIGO 5 de 8];
          print('Você pediu um Bife Acebolado no tamanho P: R$16.00')
-        if (tamanho == 'm'):
+        elif (tamanho == 'm'):
             valor += 18
             print('Você pediu um Bife Acebolado no tamanho M: R$18.00')
-        if (tamanho == 'g'):
+        elif (tamanho == 'g'):
             valor += 22
             print('Você pediu um Bife Acebolado no tamanho G: R$22.00')
     elif (sabor == 'ff'):
         if (tamanho == 'p'):
             valor += 15
             print('Você pediu um Filé de Frango no tamanho P: R$15.00')
-        if (tamanho == 'm'):
+        elif (tamanho == 'm'):
             valor += 17
             print('Você pediu um Filé de Frango no tamanho M: R$17.00')
-        if (tamanho == 'g'):
+        elif (tamanho == 'g'):
             valor += 21
             print('Você pediu um Filé de Frango no tamanho G: R$21.00')
     

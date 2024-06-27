@@ -91,7 +91,7 @@ print('O valor total do seu pedido foi de R${}.'.format(total))
 # vamos trabalhar apenas com valores inteiros e com cédula de R$100,
 # R$50, R$20, R$10, R$5 e R$1
 
-'''
+
 valor = int(input('Digite o valor que você deseja: '))
 
 notas_100 = valor // 100
@@ -118,42 +118,41 @@ print('Notas de 20: {}'.format(notas_20))
 print('Notas de 10: {}'.format(notas_10))
 print('Notas de 5: {}'.format(notas_5))
 print('Notas de 1: {}'.format(notas_1))
-'''
 
-'''
-# Usando laço
-valor = int(input('Digite o valor que você deseja: '))
-while valor:
-    if valor >= 100:
-        notas_100 = valor // 100
-        valor = valor  - notas_100 * 100
-        print('Notas de 100: {}'.format(notas_100))
+
+# # Usando laço
+# valor = int(input('Digite o valor que você deseja: '))
+# while valor:
+#     if valor >= 100:
+#         notas_100 = valor // 100
+#         valor = valor  - notas_100 * 100
+#         print('Notas de 100: {}'.format(notas_100))
     
-    if valor >= 50:
-        notas_50 = valor // 50
-        valor = valor  - notas_50 * 50
-        print('Notas de 50: {}'.format(notas_50))
+#     if valor >= 50:
+#         notas_50 = valor // 50
+#         valor = valor  - notas_50 * 50
+#         print('Notas de 50: {}'.format(notas_50))
 
-    if valor >= 20:
-        notas_20 = valor // 20
-        valor = valor  - notas_20 * 20
-        print('Notas de 20: {}'.format(notas_20))
+#     if valor >= 20:
+#         notas_20 = valor // 20
+#         valor = valor  - notas_20 * 20
+#         print('Notas de 20: {}'.format(notas_20))
 
-    if valor >= 10:
-        notas_10 = valor // 10
-        valor = valor  - notas_10 * 10
-        print('Notas de 10: {}'.format(notas_10))
+#     if valor >= 10:
+#         notas_10 = valor // 10
+#         valor = valor  - notas_10 * 10
+#         print('Notas de 10: {}'.format(notas_10))
 
-    if valor >= 5:
-        notas_5 = valor // 5
-        valor = valor  - notas_5 * 5
-        print('Notas de 5: {}'.format(notas_5))
+#     if valor >= 5:
+#         notas_5 = valor // 5
+#         valor = valor  - notas_5 * 5
+#         print('Notas de 5: {}'.format(notas_5))
 
-    if valor:
-        notas_1 = valor
-        valor = valor  - notas_1
-        print('Notas de 1: {}'.format(notas_1))
-'''
+#     if valor:
+#         notas_1 = valor
+#         valor = valor  - notas_1
+#         print('Notas de 1: {}'.format(notas_1))
+
 
 # Exercicio 3
 
@@ -167,28 +166,28 @@ while valor:
 # Após encerrar o laço, apresente na tela o total de pessoas que compraram ingressos,
 # o total de dinheiro arrecadado e a média de idade das pessoas.
 
-idade = int(input('TABELA DE PREÇO\nMenores de 3 anos: Gratuito\nEntre 3 e 12 anos: R$15,00\nMaiores de 12 anos: R$30,00\nPara SAIR digite 0.\n'))
-clientes = 0
-bilheteria = 0
-soma_idades = 0
+# idade = int(input('TABELA DE PREÇO\nMenores de 3 anos: Gratuito\nEntre 3 e 12 anos: R$15,00\nMaiores de 12 anos: R$30,00\nPara SAIR digite 0.\n'))
+# clientes = 0
+# bilheteria = 0
+# soma_idades = 0
 
-while idade > 0:
-    if (idade <= 0):
-        break;    
-    elif (idade > 0 and idade < 3):
-        clientes += 1
-        soma_idades += idade
-    elif (idade >= 3 and idade <= 12):
-        bilheteria += 15
-        clientes += 1
-        soma_idades += idade
-    elif (idade > 12):
-        bilheteria += 30
-        clientes += 1
-        soma_idades += idade
-    idade = int(input('Próximo cliente: '))
+# while idade > 0:
+#     if (idade <= 0):
+#         break;    
+#     elif (idade > 0 and idade < 3):
+#         clientes += 1
+#         soma_idades += idade
+#     elif (idade >= 3 and idade <= 12):
+#         bilheteria += 15
+#         clientes += 1
+#         soma_idades += idade
+#     elif (idade > 12):
+#         bilheteria += 30
+#         clientes += 1
+#         soma_idades += idade
+#     idade = int(input('Próximo cliente: '))
 
-if (clientes != 0):
-    print('Total de clientes: {}\nBilheteria: R${}\nMédia de idade: {} anos\n'.format(clientes, bilheteria, soma_idades/clientes))
-else:
-    print('Saindo...')
+# if (clientes != 0):
+#     print('Total de clientes: {}\nBilheteria: R${}\nMédia de idade: {} anos\n'.format(clientes, bilheteria, soma_idades/clientes))
+# else:
+#     print('Saindo...')

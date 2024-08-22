@@ -253,3 +253,53 @@ h4 {
 .tipos_formacao {
   height: 10rem;
 }
+
+.tipos_formacao h4 {
+  font-weight: 500;
+}
+
+.titulo {
+  border: 0.2rem solid;
+  border-image: linear-gradient(
+      to right,
+      var(--azul_0) 0%,
+      var(--verde_0) 10%,
+      var(--branco) 30%
+    )
+    1;
+  border-top: var(--branco);
+  padding-left: 5px;
+}
+
+.titulo_borda {
+  border: 0.2rem solid;
+  border-image: linear-gradient(
+      to right,
+      var(--azul_0) 0%,
+      var(--verde_0) 30%,
+      var(--branco) 60%
+    )
+    1;
+  border-top: var(--branco);
+  padding-left: 5px;
+}
+
+.borda_lateral {
+  padding-left: 0.5rem;
+  border: 0.1rem solid;
+  border-image: linear-gradient(
+      to bottom right,
+      var(--azul_0) 60%,
+      var(--verde_0) 70%,
+      var(--branco) 90%
+    )
+    1;
+
+  border-top: var(--branco);
+  border-right: var(--branco);
+}
+
+/* Portfólio */
+.fundo_portfolio {
+  height: auto;
+}

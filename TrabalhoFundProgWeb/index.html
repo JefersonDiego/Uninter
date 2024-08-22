@@ -32,7 +32,7 @@
           <span class="material-symbols-outlined brilho"> school </span>
           <span class="menu_formacao"> Formação</span>
         </a>
-        <a href="#portfolio" class="linha">
+        <a href="#area_portfolio" class="linha">
           <span class="material-symbols-outlined brilho"> work </span>
           <span class="menu_portfolio">Portfólio</span>
         </a>
@@ -44,6 +44,7 @@
     </header>
 
     <!-- Conteúdo -->
+
     <main>
       <section class="container apresentacao">
         <div class="fundo">
@@ -68,13 +69,13 @@
                 <i class="fa-brands fa-github"></i>
               </a>
             </div>
-            <div class="botoes borda"></div>
+            <div class="botoes borda" id="area_sobre"></div>
           </div>
         </div>
       </section>
 
       <!-- Sobre -->
-      <section class="container sobre" id="area_sobre">
+      <section class="container sobre">
         <div class="fundo_conteudo">
           <article>
             <h3 class="titulo">Sobre mim</h3>
@@ -119,7 +120,9 @@
               <div class="tipos_servicos">
                 <span class="material-symbols-outlined"> language </span>
                 <h4>Geoprocessamento</h4>
-                <p>Atuação em diversas áreas do geoprocessamento.</p>
+                <p id="area_formacao">
+                  Atuação em diversas áreas do geoprocessamento.
+                </p>
               </div>
             </div>
           </article>
@@ -128,40 +131,40 @@
 
       <!-- Formação  -->
 
-      <section class="container formacao" id="area_formacao">
+      <section class="container formacao">
         <div class="fundo_conteudo fundo_formacao">
           <article>
             <div class="grade">
               <div class="grade_formacao">
                 <!-- Titulo -->
                 <div class="titulo_formacao">
-                  <h3 class="titulo">Formação</h3>
+                  <h3 class="titulo titulo_borda">Formação</h3>
                 </div>
 
                 <!-- Conteúdo -->
-                <div class="tipos_formacao">
+                <div class="tipos_formacao borda_lateral">
                   <p class="periodo">2000 - 2002</p>
                   <h4>Técnico em Informática</h4>
                   <p>
                     Instituto de Educação Cenecista General Canabarro, IECEG
                   </p>
                 </div>
-                <div class="tipos_formacao">
+                <div class="tipos_formacao borda_lateral">
                   <p class="periodo">2009 - 2010</p>
                   <h4>Técnico em Eletrotécnica</h4>
                   <p>Colégio Teutônia, COTEU</p>
                 </div>
-                <div class="tipos_formacao">
+                <div class="tipos_formacao borda_lateral">
                   <p class="periodo">2014 - 2019</p>
                   <h4>Graduação em Agronomia</h4>
                   <p>Universidade Federal de Pelotas, UFPEL</p>
                 </div>
-                <div class="tipos_formacao">
+                <div class="tipos_formacao borda_lateral">
                   <p class="periodo">2022 - 2022</p>
                   <h4>Mestrado em Manejo e Conservação do Solo e da Água</h4>
                   <p>Universidade Federal de Pelotas, UFPEL</p>
                 </div>
-                <div class="tipos_formacao">
+                <div class="tipos_formacao borda_lateral">
                   <p class="periodo">2024 - presente</p>
                   <h4>Análise e Desenvolvimento de Sistemas</h4>
                   <p>UNINTER</p>
@@ -170,35 +173,70 @@
               <div class="grade_cursos">
                 <!-- Titulo -->
                 <div class="titulo_formacao">
-                  <h3 class="titulo">Cursos</h3>
+                  <h3 class="titulo titulo_borda">Cursos</h3>
                 </div>
 
                 <!-- Conteúdo -->
-                <div class="tipos_formacao">
+                <div class="tipos_formacao borda_lateral">
                   <p class="periodo">2023 - 2023</p>
                   <h4>Curso Web Moderno</h4>
                   <p>Udemy</p>
                 </div>
-                <div class="tipos_formacao">
+                <div class="tipos_formacao borda_lateral">
                   <p class="periodo">2023 - 2023</p>
                   <h4>Curso de JavaScript e TypeScript</h4>
                   <p>Udemy</p>
                 </div>
-                <div class="tipos_formacao">
+                <div class="tipos_formacao borda_lateral">
                   <p class="periodo">2023 - Presente</p>
                   <h4>Cursos de Web Design, UX/UI Design.</h4>
                   <p>Origamid</p>
                 </div>
-                <div class="tipos_formacao">
+                <div class="tipos_formacao borda_lateral">
                   <p class="periodo">2024 - Presente</p>
                   <h4>Do zero ao fullstack</h4>
                   <p>B7Web</p>
                 </div>
-                <div class="tipos_formacao">
+                <div class="tipos_formacao borda_lateral">
                   <p class="periodo">2024 - presente</p>
                   <h4>Infinity PRO</h4>
-                  <p>Onebitcode</p>
+                  <p id="area_portfolio">Onebitcode</p>
                 </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Portfólio -->
+      <section class="container sobre">
+        <div class="fundo_conteudo fundo_portfolio">
+          <article>
+            <h3 class="titulo">Portfólio</h3>
+          </article>
+          <article>
+            <div class="grade grade_sobre">
+              <div class="tipos_servicos">
+                <span class="material-symbols-outlined"> equalizer </span>
+                <h4>Data Science</h4>
+                <p>
+                  Desenvolvimento de algoritmos voltados a análise de dados.
+                </p>
+              </div>
+              <div class="tipos_servicos">
+                <span class="material-symbols-outlined"> javascript </span>
+                <h4>Backend</h4>
+                <p>Desenvolvimento backend, focado em JavaScript e NodeJS.</p>
+              </div>
+              <div class="tipos_servicos">
+                <span class="material-symbols-outlined"> database </span>
+                <h4>Banco de Dados</h4>
+                <p>Gestão de banco de dados relacional e não relacional.</p>
+              </div>
+              <div class="tipos_servicos">
+                <span class="material-symbols-outlined"> language </span>
+                <h4>Geoprocessamento</h4>
+                <p>Atuação em diversas áreas do geoprocessamento.</p>
               </div>
             </div>
           </article>

@@ -116,7 +116,23 @@ h2 {
 .fundo {
   height: 60rem;
   background-color: var(--branco);
-  border-radius: 1rem;
+  border-radius: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.vazio {
+  height: 20rem;
+  flex-grow: 1;
+}
+
+.foto {
+  flex-grow: 1;
+}
+
+.apresentacao_texto {
+  flex-grow: 1;
 }
 
 .nome {

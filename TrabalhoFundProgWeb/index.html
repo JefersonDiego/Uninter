@@ -24,28 +24,28 @@
     <!-- Menu -->
     <header>
       <nav class="menu">
-        <a href="#sobre">
+        <a href="#area_sobre">
           <span class="material-symbols-outlined brilho"> person </span>
-          <span class="sobre">Sobre</span>
+          <span class="menu_sobre">Sobre</span>
         </a>
-        <a href="#formacao" class="linha">
+        <a href="#area_formacao" class="linha">
           <span class="material-symbols-outlined brilho"> school </span>
-          <span class="formacao"> Formação</span>
+          <span class="menu_formacao"> Formação</span>
         </a>
         <a href="#portfolio" class="linha">
           <span class="material-symbols-outlined brilho"> work </span>
-          <span class="portfolio">Portfólio</span>
+          <span class="menu_portfolio">Portfólio</span>
         </a>
         <a href="#contato" class="linha">
           <span class="material-symbols-outlined brilho"> contacts </span>
-          <span class="contato">Contato</span>
+          <span class="menu_contato">Contato</span>
         </a>
       </nav>
     </header>
 
     <!-- Conteúdo -->
     <main>
-      <section class="apresentacao">
+      <section class="container apresentacao">
         <div class="fundo">
           <div class="vazio"></div>
           <div class="foto borda">
@@ -55,13 +55,153 @@
             <h1 class="nome borda">Pedro Pedro Pedro</h1>
             <h2 class="profissao borda">Frontend / Backend</h2>
             <div class="redes_sociais borda">
-              <i class="fa-brands fa-square-x-twitter"></i>
-              <i class="fa-brands fa-discord"></i>
-              <i class="fa-brands fa-square-instagram"></i>
-              <i class="fa-brands fa-github"></i>
+              <a href="https://x.com">
+                <i class="fa-brands fa-square-x-twitter"></i>
+              </a>
+              <a href="https://discord.com/">
+                <i class="fa-brands fa-discord"></i>
+              </a>
+              <a href="https://instagram.com/">
+                <i class="fa-brands fa-square-instagram"></i
+              ></a>
+              <a href="https://github.com/">
+                <i class="fa-brands fa-github"></i>
+              </a>
             </div>
             <div class="botoes borda"></div>
           </div>
+        </div>
+      </section>
+
+      <!-- Sobre -->
+      <section class="container sobre" id="area_sobre">
+        <div class="fundo_conteudo">
+          <article>
+            <h3 class="titulo">Sobre mim</h3>
+            <div class="sobre_texto">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis dicta doloribus impedit reiciendis recusandae atque
+                voluptates dolorum hic! Non quod ducimus aut, commodi facilis
+                quo facere sunt quam aliquid, autem, nihil omnis. Numquam
+                repellendus neque cupiditate quae nostrum earum provident
+                dolorem odit ipsam dolores error nobis sunt in fuga, ullam nisi
+                sit distinctio tenetur beatae, mollitia soluta iste? Error odit
+                exercitationem dolore id, aspernatur illum quaerat vel earum
+                dignissimos ducimus magni atque. Magni, praesentium nisi?
+                Maiores similique voluptatem ut quo eligendi animi, tenetur eum
+                expedita amet. Nisi eum, deleniti inventore dignissimos
+                eligendi, beatae dolor facilis corrupti fugit quaerat doloremque
+                reiciendis?
+              </p>
+            </div>
+          </article>
+          <article>
+            <h3 class="titulo">Serviços</h3>
+            <div class="grade grade_sobre">
+              <div class="tipos_servicos">
+                <span class="material-symbols-outlined"> equalizer </span>
+                <h4>Data Science</h4>
+                <p>
+                  Desenvolvimento de algoritmos voltados a análise de dados.
+                </p>
+              </div>
+              <div class="tipos_servicos">
+                <span class="material-symbols-outlined"> javascript </span>
+                <h4>Backend</h4>
+                <p>Desenvolvimento backend, focado em JavaScript e NodeJS.</p>
+              </div>
+              <div class="tipos_servicos">
+                <span class="material-symbols-outlined"> database </span>
+                <h4>Banco de Dados</h4>
+                <p>Gestão de banco de dados relacional e não relacional.</p>
+              </div>
+              <div class="tipos_servicos">
+                <span class="material-symbols-outlined"> language </span>
+                <h4>Geoprocessamento</h4>
+                <p>Atuação em diversas áreas do geoprocessamento.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Formação  -->
+
+      <section class="container formacao" id="area_formacao">
+        <div class="fundo_conteudo fundo_formacao">
+          <article>
+            <div class="grade">
+              <div class="grade_formacao">
+                <!-- Titulo -->
+                <div class="titulo_formacao">
+                  <h3 class="titulo">Formação</h3>
+                </div>
+
+                <!-- Conteúdo -->
+                <div class="tipos_formacao">
+                  <p class="periodo">2000 - 2002</p>
+                  <h4>Técnico em Informática</h4>
+                  <p>
+                    Instituto de Educação Cenecista General Canabarro, IECEG
+                  </p>
+                </div>
+                <div class="tipos_formacao">
+                  <p class="periodo">2009 - 2010</p>
+                  <h4>Técnico em Eletrotécnica</h4>
+                  <p>Colégio Teutônia, COTEU</p>
+                </div>
+                <div class="tipos_formacao">
+                  <p class="periodo">2014 - 2019</p>
+                  <h4>Graduação em Agronomia</h4>
+                  <p>Universidade Federal de Pelotas, UFPEL</p>
+                </div>
+                <div class="tipos_formacao">
+                  <p class="periodo">2022 - 2022</p>
+                  <h4>Mestrado em Manejo e Conservação do Solo e da Água</h4>
+                  <p>Universidade Federal de Pelotas, UFPEL</p>
+                </div>
+                <div class="tipos_formacao">
+                  <p class="periodo">2024 - presente</p>
+                  <h4>Análise e Desenvolvimento de Sistemas</h4>
+                  <p>UNINTER</p>
+                </div>
+              </div>
+              <div class="grade_cursos">
+                <!-- Titulo -->
+                <div class="titulo_formacao">
+                  <h3 class="titulo">Cursos</h3>
+                </div>
+
+                <!-- Conteúdo -->
+                <div class="tipos_formacao">
+                  <p class="periodo">2023 - 2023</p>
+                  <h4>Curso Web Moderno</h4>
+                  <p>Udemy</p>
+                </div>
+                <div class="tipos_formacao">
+                  <p class="periodo">2023 - 2023</p>
+                  <h4>Curso de JavaScript e TypeScript</h4>
+                  <p>Udemy</p>
+                </div>
+                <div class="tipos_formacao">
+                  <p class="periodo">2023 - Presente</p>
+                  <h4>Cursos de Web Design, UX/UI Design.</h4>
+                  <p>Origamid</p>
+                </div>
+                <div class="tipos_formacao">
+                  <p class="periodo">2024 - Presente</p>
+                  <h4>Do zero ao fullstack</h4>
+                  <p>B7Web</p>
+                </div>
+                <div class="tipos_formacao">
+                  <p class="periodo">2024 - presente</p>
+                  <h4>Infinity PRO</h4>
+                  <p>Onebitcode</p>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
     </main>

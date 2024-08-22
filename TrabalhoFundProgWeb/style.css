@@ -5,6 +5,7 @@
   border: none;
   --default_letter_spacing: 0.1rem;
   --branco: #fff;
+  --gray_0: #ddd;
   --azul_0: #209cff;
   --verde_0: #68e0cf;
   --gray_1: rgba(120, 120, 120, 0.3);
@@ -134,8 +135,12 @@ h4 {
   flex-grow: 1;
 }
 
-.foto {
+.container_foto {
   flex-grow: 1;
+}
+.foto {
+  height: 20rem;
+  border-radius: 50%;
 }
 
 .apresentacao_texto {

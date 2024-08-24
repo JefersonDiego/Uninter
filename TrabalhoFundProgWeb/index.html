@@ -36,7 +36,7 @@
           <span class="material-symbols-outlined brilho"> work </span>
           <span class="menu_portfolio">Portfólio</span>
         </a>
-        <a href="#contato" class="linha">
+        <a href="#area_contato" class="linha">
           <span class="material-symbols-outlined brilho"> contacts </span>
           <span class="menu_contato">Contato</span>
         </a>
@@ -200,7 +200,7 @@
                 <div class="tipos_formacao borda_lateral">
                   <p class="periodo">2024 - presente</p>
                   <h4>Infinity PRO</h4>
-                  <p id="area_portfolio">Onebitcode</p>
+                  <p>Onebitcode</p>
                 </div>
               </div>
             </div>
@@ -209,7 +209,7 @@
       </section>
 
       <!-- Portfólio -->
-      <section class="container sobre">
+      <section class="container sobre" id="area_portfolio">
         <div class="fundo_conteudo fundo_portfolio">
           <article>
             <h3 class="titulo">Portfólio</h3>
@@ -242,6 +242,42 @@
           </article>
         </div>
       </section>
+
+      <!-- Contato -->
+      <section class="container sobre" id="area_contato">
+        <div class="fundo_conteudo fundo_portfolio">
+          <article>
+            <h3 class="titulo">Contato</h3>
+          </article>
+          <article>
+            <div class="contato">
+              <form class="formulario" action="#" method="get">
+                <label for="nome">
+                  <input type="text" name="nome" id="nome" placeholder="Nome" />
+                </label>
+
+                <label for="email">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                  />
+                </label>
+
+                <label for="mensagem"></label>
+                <textarea
+                  name="menssagen"
+                  id=""
+                  placeholder="Menssagem"
+                ></textarea>
+                <button>Enviar</button>
+              </form>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
+    <footer></footer>
   </body>
 </html>

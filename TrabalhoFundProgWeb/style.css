@@ -308,3 +308,64 @@ h4 {
 .fundo_portfolio {
   height: auto;
 }
+
+/* Contato */
+
+#area_contato {
+  text-align: left;
+}
+
+.contato {
+  margin-top: 2rem;
+}
+
+.formulario label,
+.formulario input,
+.formulario textarea {
+  font-size: 2rem;
+}
+
+.formulario label,
+.formulario button {
+  display: block;
+  margin-top: 1rem;
+}
+
+.formulario input,
+.formulario textarea {
+  border: 0.1rem solid;
+  border-image: linear-gradient(
+      to bottom right,
+      var(--azul_0) 0%,
+      var(--verde_0) 100%
+    )
+    1;
+}
+
+.formulario input {
+  padding: 0.5rem;
+  width: 40rem;
+}
+
+.formulario textarea {
+  resize: none;
+  font-family: "roboto", sans-serif;
+  padding: 0.5rem;
+  width: 40rem;
+  height: 20rem;
+}
+
+.formulario button {
+  padding: 0.5rem;
+  font-size: 1.8rem;
+  color: #2d2d2d;
+  background-color: #209bff9b;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+/* Rodapé */
+
+footer {
+  height: 5rem;
+}
